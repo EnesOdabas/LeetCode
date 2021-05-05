@@ -13,11 +13,11 @@ public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
         int i = 0;
         int j = 0;
-        multiloop:
+        a:
         for(i=0; i<=nums.length-1; i++){
             for(j=i+1; j<=nums.length-1; j++){
                 if(nums[i]+nums[j]==target){
-                    break multiloop;
+                    break a;
                 }
             }
         }
@@ -25,7 +25,7 @@ public class TwoSum {
     }
 
     public static void main(String[] args) {
-        int[] i= {2,7,11,15};
+        int[] i= {2,7,5,4,15};
         System.out.println(Arrays.toString(twoSum(i,9)));
     }
 
